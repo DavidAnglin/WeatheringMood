@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7DDC0D11C7D0CA6009385CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0D01C7D0CA6009385CF /* AppDelegate.swift */; };
+		D7DDC0D31C7D0CA6009385CF /* WeatheringMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0D21C7D0CA6009385CF /* WeatheringMoodViewController.swift */; };
+		D7DDC0D61C7D0CA7009385CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DDC0D41C7D0CA7009385CF /* Main.storyboard */; };
+		D7DDC0D81C7D0CA7009385CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DDC0D71C7D0CA7009385CF /* Assets.xcassets */; };
+		D7DDC0DB1C7D0CA7009385CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DDC0D91C7D0CA7009385CF /* LaunchScreen.storyboard */; };
+		D7DDC0E61C7D0CA7009385CF /* WeatheringMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0E51C7D0CA7009385CF /* WeatheringMoodTests.swift */; };
+		D7DDC0F11C7D0CA7009385CF /* WeatheringMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0F01C7D0CA7009385CF /* WeatheringMoodUITests.swift */; };
+		D7DDC1001C7D0D3A009385CF /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */; };
+		D7DDC1021C7D0D54009385CF /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC1011C7D0D54009385CF /* FaceView.swift */; };
+		D7DDC1041C7D0D70009385CF /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7DDC0E21C7D0CA7009385CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DDC0C51C7D0CA6009385CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DDC0CC1C7D0CA6009385CF;
+			remoteInfo = WeatheringMood;
+		};
+		D7DDC0ED1C7D0CA7009385CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DDC0C51C7D0CA6009385CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DDC0CC1C7D0CA6009385CF;
+			remoteInfo = WeatheringMood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7DDC0CD1C7D0CA6009385CF /* WeatheringMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatheringMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DDC0D01C7D0CA6009385CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7DDC0D21C7D0CA6009385CF /* WeatheringMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheringMoodViewController.swift; sourceTree = "<group>"; };
+		D7DDC0D51C7D0CA7009385CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7DDC0D71C7D0CA7009385CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7DDC0DA1C7D0CA7009385CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7DDC0DC1C7D0CA7009385CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DDC0E11C7D0CA7009385CF /* WeatheringMoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatheringMoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DDC0E51C7D0CA7009385CF /* WeatheringMoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheringMoodTests.swift; sourceTree = "<group>"; };
+		D7DDC0E71C7D0CA7009385CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DDC0EC1C7D0CA7009385CF /* WeatheringMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatheringMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DDC0F01C7D0CA7009385CF /* WeatheringMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheringMoodUITests.swift; sourceTree = "<group>"; };
+		D7DDC0F21C7D0CA7009385CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
+		D7DDC1011C7D0D54009385CF /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DDC0CA1C7D0CA6009385CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0DE1C7D0CA7009385CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0E91C7D0CA7009385CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7DDC0C41C7D0CA6009385CF = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0CF1C7D0CA6009385CF /* WeatheringMood */,
+				D7DDC0E41C7D0CA7009385CF /* WeatheringMoodTests */,
+				D7DDC0EF1C7D0CA7009385CF /* WeatheringMoodUITests */,
+				D7DDC0CE1C7D0CA6009385CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DDC0CE1C7D0CA6009385CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0CD1C7D0CA6009385CF /* WeatheringMood.app */,
+				D7DDC0E11C7D0CA7009385CF /* WeatheringMoodTests.xctest */,
+				D7DDC0EC1C7D0CA7009385CF /* WeatheringMoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DDC0CF1C7D0CA6009385CF /* WeatheringMood */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0D21C7D0CA6009385CF /* WeatheringMoodViewController.swift */,
+				D7DDC0D41C7D0CA7009385CF /* Main.storyboard */,
+				D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */,
+				D7DDC1011C7D0D54009385CF /* FaceView.swift */,
+				D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */,
+				D7DDC0FE1C7D0CC5009385CF /* Supporting Files */,
+			);
+			path = WeatheringMood;
+			sourceTree = "<group>";
+		};
+		D7DDC0E41C7D0CA7009385CF /* WeatheringMoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0E51C7D0CA7009385CF /* WeatheringMoodTests.swift */,
+				D7DDC0E71C7D0CA7009385CF /* Info.plist */,
+			);
+			path = WeatheringMoodTests;
+			sourceTree = "<group>";
+		};
+		D7DDC0EF1C7D0CA7009385CF /* WeatheringMoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0F01C7D0CA7009385CF /* WeatheringMoodUITests.swift */,
+				D7DDC0F21C7D0CA7009385CF /* Info.plist */,
+			);
+			path = WeatheringMoodUITests;
+			sourceTree = "<group>";
+		};
+		D7DDC0FE1C7D0CC5009385CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDC0DC1C7D0CA7009385CF /* Info.plist */,
+				D7DDC0D91C7D0CA7009385CF /* LaunchScreen.storyboard */,
+				D7DDC0D71C7D0CA7009385CF /* Assets.xcassets */,
+				D7DDC0D01C7D0CA6009385CF /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DDC0CC1C7D0CA6009385CF /* WeatheringMood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DDC0F51C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMood" */;
+			buildPhases = (
+				D7DDC0C91C7D0CA6009385CF /* Sources */,
+				D7DDC0CA1C7D0CA6009385CF /* Frameworks */,
+				D7DDC0CB1C7D0CA6009385CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatheringMood;
+			productName = WeatheringMood;
+			productReference = D7DDC0CD1C7D0CA6009385CF /* WeatheringMood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7DDC0E01C7D0CA7009385CF /* WeatheringMoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DDC0F81C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMoodTests" */;
+			buildPhases = (
+				D7DDC0DD1C7D0CA7009385CF /* Sources */,
+				D7DDC0DE1C7D0CA7009385CF /* Frameworks */,
+				D7DDC0DF1C7D0CA7009385CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DDC0E31C7D0CA7009385CF /* PBXTargetDependency */,
+			);
+			name = WeatheringMoodTests;
+			productName = WeatheringMoodTests;
+			productReference = D7DDC0E11C7D0CA7009385CF /* WeatheringMoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7DDC0EB1C7D0CA7009385CF /* WeatheringMoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DDC0FB1C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMoodUITests" */;
+			buildPhases = (
+				D7DDC0E81C7D0CA7009385CF /* Sources */,
+				D7DDC0E91C7D0CA7009385CF /* Frameworks */,
+				D7DDC0EA1C7D0CA7009385CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DDC0EE1C7D0CA7009385CF /* PBXTargetDependency */,
+			);
+			name = WeatheringMoodUITests;
+			productName = WeatheringMoodUITests;
+			productReference = D7DDC0EC1C7D0CA7009385CF /* WeatheringMoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DDC0C51C7D0CA6009385CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "David Anglin";
+				TargetAttributes = {
+					D7DDC0CC1C7D0CA6009385CF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = EZVKD2Y4CX;
+					};
+					D7DDC0E01C7D0CA7009385CF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = EZVKD2Y4CX;
+						TestTargetID = D7DDC0CC1C7D0CA6009385CF;
+					};
+					D7DDC0EB1C7D0CA7009385CF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = EZVKD2Y4CX;
+						TestTargetID = D7DDC0CC1C7D0CA6009385CF;
+					};
+				};
+			};
+			buildConfigurationList = D7DDC0C81C7D0CA6009385CF /* Build configuration list for PBXProject "WeatheringMood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DDC0C41C7D0CA6009385CF;
+			productRefGroup = D7DDC0CE1C7D0CA6009385CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DDC0CC1C7D0CA6009385CF /* WeatheringMood */,
+				D7DDC0E01C7D0CA7009385CF /* WeatheringMoodTests */,
+				D7DDC0EB1C7D0CA7009385CF /* WeatheringMoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DDC0CB1C7D0CA6009385CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DDC0DB1C7D0CA7009385CF /* LaunchScreen.storyboard in Resources */,
+				D7DDC0D81C7D0CA7009385CF /* Assets.xcassets in Resources */,
+				D7DDC0D61C7D0CA7009385CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0DF1C7D0CA7009385CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0EA1C7D0CA7009385CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DDC0C91C7D0CA6009385CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DDC1001C7D0D3A009385CF /* DiagnosedHappinessViewController.swift in Sources */,
+				D7DDC0D31C7D0CA6009385CF /* WeatheringMoodViewController.swift in Sources */,
+				D7DDC0D11C7D0CA6009385CF /* AppDelegate.swift in Sources */,
+				D7DDC1021C7D0D54009385CF /* FaceView.swift in Sources */,
+				D7DDC1041C7D0D70009385CF /* HappinessViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0DD1C7D0CA7009385CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DDC0E61C7D0CA7009385CF /* WeatheringMoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DDC0E81C7D0CA7009385CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DDC0F11C7D0CA7009385CF /* WeatheringMoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7DDC0E31C7D0CA7009385CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DDC0CC1C7D0CA6009385CF /* WeatheringMood */;
+			targetProxy = D7DDC0E21C7D0CA7009385CF /* PBXContainerItemProxy */;
+		};
+		D7DDC0EE1C7D0CA7009385CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DDC0CC1C7D0CA6009385CF /* WeatheringMood */;
+			targetProxy = D7DDC0ED1C7D0CA7009385CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7DDC0D41C7D0CA7009385CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DDC0D51C7D0CA7009385CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7DDC0D91C7D0CA7009385CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DDC0DA1C7D0CA7009385CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7DDC0F31C7D0CA7009385CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7DDC0F41C7D0CA7009385CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7DDC0F61C7D0CA7009385CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatheringMood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7DDC0F71C7D0CA7009385CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatheringMood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7DDC0F91C7D0CA7009385CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeatheringMoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatheringMood.app/WeatheringMood";
+			};
+			name = Debug;
+		};
+		D7DDC0FA1C7D0CA7009385CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeatheringMoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatheringMood.app/WeatheringMood";
+			};
+			name = Release;
+		};
+		D7DDC0FC1C7D0CA7009385CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeatheringMoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WeatheringMood;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D7DDC0FD1C7D0CA7009385CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeatheringMoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.WeatheringMoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WeatheringMood;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DDC0C81C7D0CA6009385CF /* Build configuration list for PBXProject "WeatheringMood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DDC0F31C7D0CA7009385CF /* Debug */,
+				D7DDC0F41C7D0CA7009385CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DDC0F51C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DDC0F61C7D0CA7009385CF /* Debug */,
+				D7DDC0F71C7D0CA7009385CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7DDC0F81C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DDC0F91C7D0CA7009385CF /* Debug */,
+				D7DDC0FA1C7D0CA7009385CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7DDC0FB1C7D0CA7009385CF /* Build configuration list for PBXNativeTarget "WeatheringMoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DDC0FC1C7D0CA7009385CF /* Debug */,
+				D7DDC0FD1C7D0CA7009385CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7DDC0C51C7D0CA6009385CF /* Project object */;
+}

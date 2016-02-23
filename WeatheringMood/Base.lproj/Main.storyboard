@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jd7-Yc-fCC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AYu-b9-RWp">
+            <objects>
+                <navigationController id="23m-6p-Jk8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gcz-82-RbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8pA-pW-Q1H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8o-WR-PIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="-349"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="cZo-Sh-NxH">
+            <objects>
+                <splitViewController id="Jd7-Yc-fCC" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="23m-6p-Jk8" kind="relationship" relationship="masterViewController" id="LgX-RH-inP"/>
+                        <segue destination="i8J-6Y-eUl" kind="relationship" relationship="detailViewController" id="mkf-wu-xOn"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zy1-Ep-lSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1000" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xgp-Is-yyD">
+            <objects>
+                <navigationController id="i8J-6Y-eUl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W9N-Rk-F9F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LO0-no-1CW" kind="relationship" relationship="rootViewController" id="O70-FV-dDU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fu9-o5-eYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="558"/>
+        </scene>
+        <!--Weathering Mood-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatheringMoodViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does the weather make you feel?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-zw-GyT">
+                                <rect key="frame" x="20" y="64" width="560" height="100"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. 94586" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7j-Qj-abs">
+                                <rect key="frame" x="184" y="285" width="232" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Zip Code:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOO-FT-DLX">
+                                <rect key="frame" x="184" y="246" width="232" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="Fyf-V2-aVm"/>
+                                    <constraint firstAttribute="height" constant="31" id="zRo-FG-1Iz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgj-HR-AIb">
+                                <rect key="frame" x="184" y="323" width="232" height="49"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="dQt-vY-WVp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="See what Californians Think?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7j-Qj-abs" firstAttribute="leading" secondItem="cOO-FT-DLX" secondAttribute="leading" id="0Mc-1J-zeG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nEy-zw-GyT" secondAttribute="bottom" constant="436" id="1pG-Q6-UFi"/>
+                            <constraint firstItem="nEy-zw-GyT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2or-u5-feF"/>
+                            <constraint firstItem="cOO-FT-DLX" firstAttribute="top" secondItem="nEy-zw-GyT" secondAttribute="bottom" constant="82" id="9pT-Pa-H7G"/>
+                            <constraint firstItem="nEy-zw-GyT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G1f-Ns-okv"/>
+                            <constraint firstItem="wgj-HR-AIb" firstAttribute="top" secondItem="Y7j-Qj-abs" secondAttribute="bottom" constant="8" symbolic="YES" id="IC5-7G-IYJ"/>
+                            <constraint firstItem="cOO-FT-DLX" firstAttribute="centerX" secondItem="nEy-zw-GyT" secondAttribute="centerX" id="KTS-qk-NsD"/>
+                            <constraint firstItem="wgj-HR-AIb" firstAttribute="leading" secondItem="Y7j-Qj-abs" secondAttribute="leading" id="MXO-pS-2mp"/>
+                            <constraint firstItem="Y7j-Qj-abs" firstAttribute="top" secondItem="cOO-FT-DLX" secondAttribute="bottom" constant="8" symbolic="YES" id="OTM-sw-o7E"/>
+                            <constraint firstItem="Y7j-Qj-abs" firstAttribute="trailing" secondItem="cOO-FT-DLX" secondAttribute="trailing" id="Rq1-g9-pzY"/>
+                            <constraint firstItem="wgj-HR-AIb" firstAttribute="trailing" secondItem="Y7j-Qj-abs" secondAttribute="trailing" id="jBw-3f-KOq"/>
+                            <constraint firstItem="nEy-zw-GyT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lT6-aO-RUE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weathering Mood" id="YO8-kl-oYv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="-349"/>
+        </scene>
+        <!--The Weather is . . .-->
+        <scene sceneID="jc2-cN-CgK">
+            <objects>
+                <viewController id="LO0-no-1CW" customClass="DiagnosedHappinessViewController" customModule="WeatheringMood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rEX-Ac-waZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XrK-RN-Z9v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PJW-Cn-bb7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-Tj-iOa" customClass="FaceView" customModule="WeatheringMood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.98392506540000002" green="0.1492867121" blue="0.13002607269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.94999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="l9X-Sl-UhU" appends="YES" id="e91-SB-Hvi"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xeb-Tj-iOa" secondAttribute="trailing" id="H8r-7R-5Ls"/>
+                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="leading" secondItem="PJW-Cn-bb7" secondAttribute="leading" id="IvL-IJ-6GW"/>
+                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="top" secondItem="PJW-Cn-bb7" secondAttribute="top" id="eif-F6-rbF"/>
+                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="bottom" secondItem="XrK-RN-Z9v" secondAttribute="top" id="eyc-Ok-S0V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Weather is . . ." id="1pt-SQ-Xx8"/>
+                    <connections>
+                        <outlet property="faceView" destination="Xeb-Tj-iOa" id="RpA-B8-0AY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMi-Xg-Dw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="l9X-Sl-UhU">
+                    <connections>
+                        <action selector="changeHappiness:" destination="LO0-no-1CW" id="zIQ-YI-3oM"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="582" y="558"/>
+        </scene>
+    </scenes>
+</document>
