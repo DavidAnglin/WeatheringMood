@@ -10,12 +10,151 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatheringMood/WeatheringMoodViewController.swift"
-            timestampString = "478026302.859017"
+            timestampString = "478047154.968903"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "WeatheringMoodViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherApiCall.swift"
+            timestampString = "478033392.783494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatheringMood/WeatheringMoodViewController.swift"
+            timestampString = "478047154.968903"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "decisions(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatheringMood/WeatheringMoodViewController.swift"
+            timestampString = "478046751.722098"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "WeatheringMoodViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatheringMood.WeatheringMoodViewController.zipCodeText.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "WeatheringMood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danglin/Developer/Swift/WeatheringMood/WeatheringMood/WeatheringMoodViewController.swift"
+                  timestampString = "478046751.731498"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatheringMood.WeatheringMoodViewController.zipCodeText.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "WeatheringMood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danglin/Developer/Swift/WeatheringMood/WeatheringMood/WeatheringMoodViewController.swift"
+                  timestampString = "478046751.731795"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatheringMood.WeatheringMoodViewController.zipCodeText.materializeForSet : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "WeatheringMood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danglin/Developer/Swift/WeatheringMood/WeatheringMood/WeatheringMoodViewController.swift"
+                  timestampString = "478046751.732558"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatheringMood.WeatheringMoodViewController.init (WeatheringMood.WeatheringMoodViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; WeatheringMood.WeatheringMoodViewController"
+                  moduleName = "WeatheringMood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danglin/Developer/Swift/WeatheringMood/WeatheringMood/WeatheringMoodViewController.swift"
+                  timestampString = "478046751.732934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatheringMood.WeatheringMoodViewController.init (WeatheringMood.WeatheringMoodViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;WeatheringMood.WeatheringMoodViewController&gt;"
+                  moduleName = "WeatheringMood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danglin/Developer/Swift/WeatheringMood/WeatheringMood/WeatheringMoodViewController.swift"
+                  timestampString = "478046751.733252"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatheringMood/WeatheringMoodViewController.swift"
+            timestampString = "478048408.708714"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getData(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

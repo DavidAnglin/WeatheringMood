@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class WeatheringMoodViewController: UIViewController, UITextFieldDelegate
 {
@@ -15,6 +17,9 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+
+        
+        
     }
     //Calls this function when the tap is recognized.
     func dismissKeyboard() {
@@ -25,7 +30,7 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate
     
     
     
-    var zipCodeText: String? = "92585"  {
+    var zipCodeText: String? = ""   {
         didSet {
             zipCodeSearchField.text = zipCodeText
         }
@@ -58,11 +63,24 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate
     }
     
     
+    let openWeatherSite = "http://api.openweathermap.org/data/2.5/weather"
+    func getData(zip: String) {
+        Alamofire.request(.GET, openWeatherSite, parameters: ["q":zip, "units":"imperial"])
+            .responseJSON { response in
+          
+        }
+//        zipCodeText = zip
+    }
+
     
-    @IBAction func decisions(sender: UIButton) {
+//    "?zip=\(zip),us&units=imperial&appid=44db6a862fba0b067b1930da0d769e98"
+    
+    @IBAction func decisions(sender: UIButton)
+    {
+        getData(zipCodeText!)
     }
     
-    
+
     
 
 }
