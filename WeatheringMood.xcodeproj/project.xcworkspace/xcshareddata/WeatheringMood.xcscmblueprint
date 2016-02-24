@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "50DBBC3185B7061193540E35546477C43A70ACA4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7769432435191453A290BE71278277BFD9E03304" : 0,
+    "50DBBC3185B7061193540E35546477C43A70ACA4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "65144EBC-8B94-4B78-96FA-B8C656097078",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7769432435191453A290BE71278277BFD9E03304" : "",
+    "50DBBC3185B7061193540E35546477C43A70ACA4" : "WeatheringMood\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WeatheringMood",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WeatheringMood.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidAnglin\/WeatheringMood.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50DBBC3185B7061193540E35546477C43A70ACA4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidAnglin\/Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7769432435191453A290BE71278277BFD9E03304"
+    }
+  ]
+}

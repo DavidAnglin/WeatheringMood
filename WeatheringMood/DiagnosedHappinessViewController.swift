@@ -18,8 +18,4 @@ class DiagnosedHappinessViewController: HappinessViewController, UIPopoverPresen
             happinessChange = 0
         }
     }
-
-  
-    
-   
 }
