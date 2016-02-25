@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiagnosedHappinessViewController: HappinessViewController, UIPopoverPresentationControllerDelegate
+class DiagnosedHappinessViewController: HappinessViewController
 {
     
     override func changeHappiness(sender: UIPanGestureRecognizer) {

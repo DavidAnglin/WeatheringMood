@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 
-class WeatheringMoodViewController: UIViewController, UITextFieldDelegate, OpenWeatherMapDelegate
+class WeatheringMoodViewController: DiagnosedHappinessViewController, UITextFieldDelegate, OpenWeatherMapDelegate
 {
     
     var weatherData = WeatherApi()
@@ -56,30 +56,45 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate, OpenW
         return true
     }
     
-   
-    
     
     let limit = 5
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         return (textField.text?.utf16.count ?? 0) + string.utf16.count - range.length <= limit
     }
     
-    
+
+
     
     func updateMood()
     {
-        
-    }
-    
-    
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            var destination = segue.destinationViewController
+            if let navCon = destination as? UINavigationController {
+                destination = navCon.visibleViewController!
+            }
+            if let wmvc = destination as? WeatheringMoodViewController {
+                let temp = self.weatherData.weatherTemp
+                print(temp)
+                if temp <= 70 {
+                    happiness = 0
+                    print("The temperture is \(self.weatherData.weatherTemp)°")
+                } else {
+                    happiness = 100
+                    print("The temperture is \(self.weatherData.weatherTemp)°")
+                }
 
+            }
+        }
+    }
     
 
     @IBAction func decisions(sender: UIButton)
     {
-        
-        self.weatherData.zipCode = zipCodeSearchField.text!
-        self.weatherData.getDegrees()
+        updateMood()
+        if ((zipCodeSearchField as? UITextField) != nil) {
+            self.weatherData.zipCode = zipCodeSearchField.text!
+            self.weatherData.getDegrees()
+        }
     }
     
 

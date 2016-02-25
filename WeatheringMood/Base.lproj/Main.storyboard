@@ -129,7 +129,7 @@
         <!--The Weather is . . .-->
         <scene sceneID="jc2-cN-CgK">
             <objects>
-                <viewController id="LO0-no-1CW" customClass="DiagnosedHappinessViewController" customModule="WeatheringMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LO0-no-1CW" customClass="WeatheringMoodViewController" customModule="WeatheringMood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rEX-Ac-waZ"/>
                         <viewControllerLayoutGuide type="bottom" id="XrK-RN-Z9v"/>
