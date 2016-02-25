@@ -30,7 +30,7 @@ public class WeatherApi {
         Alamofire.request(.GET, openWeatherMapURL, parameters: ["q" : zipCode, "units" : "imperial", "APPID" : openWeatherAPIKey]).responseJSON
             { response in
                 
-                var json = JSON(response.data!)
+                let json = JSON(response.data!)
                 print(json)
                 
                 
