@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7AD9A891C7F575D00B0C04F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD9A881C7F575D00B0C04F /* SwiftyJSON.swift */; };
 		D7D1B64A1C7E2D4C00D81A8B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D1B63D1C7E2AC700D81A8B /* Alamofire.framework */; };
 		D7D1B64B1C7E2D4C00D81A8B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7D1B63D1C7E2AC700D81A8B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7D1B6521C7E2F3200D81A8B /* WeatherApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1B6511C7E2F3200D81A8B /* WeatherApiCall.swift */; };
@@ -110,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D7AD9A881C7F575D00B0C04F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = WeatheringMood/SwiftyJSON.swift; sourceTree = "<group>"; };
 		D7D1B6321C7E2AC700D81A8B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D7D1B6511C7E2F3200D81A8B /* WeatherApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherApiCall.swift; path = ../WeatherApiCall.swift; sourceTree = "<group>"; };
 		D7DDC0CD1C7D0CA6009385CF /* WeatheringMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatheringMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 		D7DDC0C41C7D0CA6009385CF = {
 			isa = PBXGroup;
 			children = (
+				D7AD9A881C7F575D00B0C04F /* SwiftyJSON.swift */,
 				D7D1B6321C7E2AC700D81A8B /* Alamofire.xcodeproj */,
 				D7DDC0CF1C7D0CA6009385CF /* WeatheringMood */,
 				D7DDC0E41C7D0CA7009385CF /* WeatheringMoodTests */,
@@ -433,6 +436,7 @@
 				D7DDC0D11C7D0CA6009385CF /* AppDelegate.swift in Sources */,
 				D7D1B6521C7E2F3200D81A8B /* WeatherApiCall.swift in Sources */,
 				D7DDC1021C7D0D54009385CF /* FaceView.swift in Sources */,
+				D7AD9A891C7F575D00B0C04F /* SwiftyJSON.swift in Sources */,
 				D7DDC1041C7D0D70009385CF /* HappinessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
