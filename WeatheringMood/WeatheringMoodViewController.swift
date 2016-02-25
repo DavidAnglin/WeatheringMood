@@ -68,7 +68,7 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate, OpenW
     
     func updateMood()
     {
-        zipCodeSearchField.text = self.weatherData.zipCode
+        
     }
     
     
@@ -77,7 +77,7 @@ class WeatheringMoodViewController: UIViewController, UITextFieldDelegate, OpenW
 
     @IBAction func decisions(sender: UIButton)
     {
-        updateMood()
+        
         self.weatherData.zipCode = zipCodeSearchField.text!
         self.weatherData.getDegrees()
     }

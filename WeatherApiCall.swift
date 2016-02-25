@@ -15,22 +15,19 @@ protocol OpenWeatherMapDelegate {
 
 public class WeatherApi {
     
-    var openWeatherAPIKey = "625e9e3bac6a3dde3d015dee3e1b54e1"
-    let openWeatherMapURL = "http://api.openweathermap.org/data/2.5/weather"
+//    var openWeatherAPIKey = "625e9e3bac6a3dde3d015dee3e1b54e1"
+//    let openWeatherMapURL = "http://api.openweathermap.org/data/2.5/weather"
     
     var delegate: OpenWeatherMapDelegate!
     
     var zipCode = ""
     
-    init() {
-    }
-    
     func getDegrees()
     {
-        Alamofire.request(.GET, openWeatherMapURL, parameters: ["q" : zipCode, "units" : "imperial", "APPID" : openWeatherAPIKey]).responseJSON
+        Alamofire.request(.GET,"http://api.openweathermap.org/data/2.5/weather?zip=\(zipCode),us&appid=44db6a862fba0b067b1930da0d769e98").responseJSON
             { response in
                 
-                let json = JSON(response.data!)
+                let json = response
                 print(json)
                 
                 
@@ -48,8 +45,7 @@ public class WeatherApi {
     }
     
     
-    
-    
+//    openWeatherMapURL, parameters: ["q" : zipCode, "units" : "imperial", "APPID" : openWeatherAPIKey]    
 }
 
     
