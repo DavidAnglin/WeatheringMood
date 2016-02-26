@@ -12,6 +12,7 @@ import Alamofire
 
 protocol OpenWeatherMapDelegate {
     func updateMood()
+    
 }
 
 public class WeatherApi {
@@ -19,7 +20,9 @@ public class WeatherApi {
     var delegate: OpenWeatherMapDelegate!
     
     var zipCode = ""
-    var weatherTemp = 0.0
+    var weatherTemp: Double = 0
+    
+  
     
     func getDegrees()
     {
@@ -39,6 +42,7 @@ public class WeatherApi {
         
         dispatch_async(dispatch_get_main_queue(), {
             self.delegate.updateMood()
+            
         })
     }
     

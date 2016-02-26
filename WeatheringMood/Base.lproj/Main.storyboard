@@ -44,12 +44,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="LO0-no-1CW" kind="relationship" relationship="rootViewController" id="O70-FV-dDU"/>
+                        <segue destination="fWq-ZR-bd7" kind="relationship" relationship="rootViewController" id="fKf-sq-Eab"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fu9-o5-eYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-209" y="415"/>
+            <point key="canvasLocation" x="-97" y="431"/>
         </scene>
         <!--Weathering Mood-->
         <scene sceneID="tne-QT-ifu">
@@ -126,59 +126,48 @@
             </objects>
             <point key="canvasLocation" x="617" y="-349"/>
         </scene>
-        <!--The Weather is . . .-->
-        <scene sceneID="jc2-cN-CgK">
+        <!--Happy Sad View Controller-->
+        <scene sceneID="E7V-FZ-y6O">
             <objects>
-                <viewController id="LO0-no-1CW" customClass="WeatheringMoodViewController" customModule="WeatheringMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fWq-ZR-bd7" customClass="HappySadViewController" customModule="WeatheringMood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rEX-Ac-waZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="XrK-RN-Z9v"/>
+                        <viewControllerLayoutGuide type="top" id="RhU-hR-S99"/>
+                        <viewControllerLayoutGuide type="bottom" id="2rj-N3-S2L"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PJW-Cn-bb7">
+                    <view key="view" contentMode="scaleToFill" id="qKf-kW-BGy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-Tj-iOa" customClass="FaceView" customModule="WeatheringMood" customModuleProvider="target">
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-cc-VhH" customClass="ExpressionView" customModule="WeatheringMood" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="11"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.98392506540000002" green="0.1492867121" blue="0.13002607269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
-                                        <real key="value" value="0.94999999999999996"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="l9X-Sl-UhU" appends="YES" id="e91-SB-Hvi"/>
+                                    <outletCollection property="gestureRecognizers" destination="oCp-6O-pYK" appends="YES" id="MvY-Fm-ECe"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Xeb-Tj-iOa" secondAttribute="trailing" id="H8r-7R-5Ls"/>
-                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="leading" secondItem="PJW-Cn-bb7" secondAttribute="leading" id="IvL-IJ-6GW"/>
-                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="top" secondItem="PJW-Cn-bb7" secondAttribute="top" id="eif-F6-rbF"/>
-                            <constraint firstItem="Xeb-Tj-iOa" firstAttribute="bottom" secondItem="XrK-RN-Z9v" secondAttribute="top" id="eyc-Ok-S0V"/>
+                            <constraint firstAttribute="trailing" secondItem="EuR-cc-VhH" secondAttribute="trailing" id="33q-cr-RT2"/>
+                            <constraint firstItem="EuR-cc-VhH" firstAttribute="top" secondItem="qKf-kW-BGy" secondAttribute="top" id="HPl-oy-DC8"/>
+                            <constraint firstItem="EuR-cc-VhH" firstAttribute="bottom" secondItem="2rj-N3-S2L" secondAttribute="top" id="Pmp-Nc-iuZ"/>
+                            <constraint firstItem="EuR-cc-VhH" firstAttribute="leading" secondItem="qKf-kW-BGy" secondAttribute="leading" id="a0x-Ja-Faf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="The Weather is . . ." id="1pt-SQ-Xx8"/>
+                    <navigationItem key="navigationItem" id="EQh-AQ-h7a"/>
                     <connections>
-                        <outlet property="faceView" destination="Xeb-Tj-iOa" id="RpA-B8-0AY"/>
+                        <outlet property="expressionView" destination="EuR-cc-VhH" id="ytC-OV-uPT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HMi-Xg-Dw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="l9X-Sl-UhU">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flS-KB-YqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="oCp-6O-pYK">
                     <connections>
-                        <action selector="changeHappiness:" destination="LO0-no-1CW" id="zIQ-YI-3oM"/>
+                        <action selector="changeMood:" destination="fWq-ZR-bd7" id="Syl-Sm-lqe"/>
                     </connections>
-                </panGestureRecognizer>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="547" y="415"/>
+            <point key="canvasLocation" x="681" y="431"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

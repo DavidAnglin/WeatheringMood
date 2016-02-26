@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7602DD61C80A253001DFFC1 /* HappySadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7602DD51C80A253001DFFC1 /* HappySadViewController.swift */; };
+		D7602DD81C80A258001DFFC1 /* ExpressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7602DD71C80A258001DFFC1 /* ExpressionView.swift */; };
 		D7AD9A891C7F575D00B0C04F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD9A881C7F575D00B0C04F /* SwiftyJSON.swift */; };
 		D7D1B64A1C7E2D4C00D81A8B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D1B63D1C7E2AC700D81A8B /* Alamofire.framework */; };
 		D7D1B64B1C7E2D4C00D81A8B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7D1B63D1C7E2AC700D81A8B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -18,9 +20,6 @@
 		D7DDC0DB1C7D0CA7009385CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DDC0D91C7D0CA7009385CF /* LaunchScreen.storyboard */; };
 		D7DDC0E61C7D0CA7009385CF /* WeatheringMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0E51C7D0CA7009385CF /* WeatheringMoodTests.swift */; };
 		D7DDC0F11C7D0CA7009385CF /* WeatheringMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0F01C7D0CA7009385CF /* WeatheringMoodUITests.swift */; };
-		D7DDC1001C7D0D3A009385CF /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */; };
-		D7DDC1021C7D0D54009385CF /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC1011C7D0D54009385CF /* FaceView.swift */; };
-		D7DDC1041C7D0D70009385CF /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +110,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D7602DD51C80A253001DFFC1 /* HappySadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappySadViewController.swift; sourceTree = "<group>"; };
+		D7602DD71C80A258001DFFC1 /* ExpressionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionView.swift; sourceTree = "<group>"; };
 		D7AD9A881C7F575D00B0C04F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = WeatheringMood/SwiftyJSON.swift; sourceTree = "<group>"; };
 		D7D1B6321C7E2AC700D81A8B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D7D1B6511C7E2F3200D81A8B /* WeatherApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherApiCall.swift; path = ../WeatherApiCall.swift; sourceTree = "<group>"; };
@@ -127,9 +128,6 @@
 		D7DDC0EC1C7D0CA7009385CF /* WeatheringMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatheringMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DDC0F01C7D0CA7009385CF /* WeatheringMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheringMoodUITests.swift; sourceTree = "<group>"; };
 		D7DDC0F21C7D0CA7009385CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
-		D7DDC1011C7D0D54009385CF /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
-		D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,12 +195,11 @@
 		D7DDC0CF1C7D0CA6009385CF /* WeatheringMood */ = {
 			isa = PBXGroup;
 			children = (
-				D7DDC0D21C7D0CA6009385CF /* WeatheringMoodViewController.swift */,
 				D7DDC0D41C7D0CA7009385CF /* Main.storyboard */,
+				D7DDC0D21C7D0CA6009385CF /* WeatheringMoodViewController.swift */,
 				D7D1B6511C7E2F3200D81A8B /* WeatherApiCall.swift */,
-				D7DDC1031C7D0D70009385CF /* HappinessViewController.swift */,
-				D7DDC1011C7D0D54009385CF /* FaceView.swift */,
-				D7DDC0FF1C7D0D3A009385CF /* DiagnosedHappinessViewController.swift */,
+				D7602DD51C80A253001DFFC1 /* HappySadViewController.swift */,
+				D7602DD71C80A258001DFFC1 /* ExpressionView.swift */,
 				D7DDC0FE1C7D0CC5009385CF /* Supporting Files */,
 			);
 			path = WeatheringMood;
@@ -431,13 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DDC1001C7D0D3A009385CF /* DiagnosedHappinessViewController.swift in Sources */,
 				D7DDC0D31C7D0CA6009385CF /* WeatheringMoodViewController.swift in Sources */,
 				D7DDC0D11C7D0CA6009385CF /* AppDelegate.swift in Sources */,
+				D7602DD81C80A258001DFFC1 /* ExpressionView.swift in Sources */,
 				D7D1B6521C7E2F3200D81A8B /* WeatherApiCall.swift in Sources */,
-				D7DDC1021C7D0D54009385CF /* FaceView.swift in Sources */,
+				D7602DD61C80A253001DFFC1 /* HappySadViewController.swift in Sources */,
 				D7AD9A891C7F575D00B0C04F /* SwiftyJSON.swift in Sources */,
-				D7DDC1041C7D0D70009385CF /* HappinessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

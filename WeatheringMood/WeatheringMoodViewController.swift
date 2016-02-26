@@ -7,20 +7,22 @@
 //
 
 import UIKit
-import Alamofire
 
 
-class WeatheringMoodViewController: DiagnosedHappinessViewController, UITextFieldDelegate, OpenWeatherMapDelegate
+class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate, OpenWeatherMapDelegate
 {
     
     var weatherData = WeatherApi()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         weatherData.delegate = self
+        updateMood()
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+        
         
     }
     //Calls this function when the tap is recognized.
@@ -63,38 +65,38 @@ class WeatheringMoodViewController: DiagnosedHappinessViewController, UITextFiel
     }
     
 
-
+    
     
     func updateMood()
     {
+        
         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            var destination = segue.destinationViewController
-            if let navCon = destination as? UINavigationController {
-                destination = navCon.visibleViewController!
-            }
-            if let wmvc = destination as? WeatheringMoodViewController {
-                let temp = self.weatherData.weatherTemp
-                print(temp)
-                if temp <= 70 {
-                    happiness = 0
-                    print("The temperture is \(self.weatherData.weatherTemp)°")
-                } else {
-                    happiness = 100
-                    print("The temperture is \(self.weatherData.weatherTemp)°")
-                }
-
+        var destination = segue.destinationViewController
+        if let navCon = destination as? UINavigationController {
+            destination = navCon.visibleViewController!
+        }
+        if let wmvc = destination as? HappySadViewController {
+            let temp = self.weatherData.weatherTemp
+            print(temp)
+            if temp <= 70 {
+                wmvc.happySad = 0
+                print("The temperture is \(self.weatherData.weatherTemp)°")
+            } else {
+                wmvc.happySad = 100
+                print("The temperture is \(self.weatherData.weatherTemp)°")
             }
         }
     }
-    
+}
+
+
 
     @IBAction func decisions(sender: UIButton)
     {
-        updateMood()
         if ((zipCodeSearchField as? UITextField) != nil) {
             self.weatherData.zipCode = zipCodeSearchField.text!
             self.weatherData.getDegrees()
-        }
+            }
     }
     
 
