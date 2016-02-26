@@ -11,6 +11,12 @@ import UIKit
 class HappySadViewController: UIViewController, ExpressionViewDataSource
 {
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        tempLabel.text = ""
+        
+    }
+    
     @IBOutlet weak var expressionView: ExpressionView!
     {
         didSet {
@@ -19,6 +25,9 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
         }
     }
     
+    var temperture: Double = 0
+       
+    
     var happySad: Int = 100 { // 0 = very sad, 100 = ecstatic
         didSet {
             happySad = min(max(happySad, 0), 100)
@@ -26,11 +35,10 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
         }
     }
     
-    var tempLabelDegree: Double = 0
+   
    
     @IBOutlet weak var tempLabel: UILabel!
   
-    
     
 //    var minimumPressDuration: CFTimeInterval = 0.0
     
@@ -49,7 +57,6 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
     
     func updateUI() {
         expressionView?.setNeedsDisplay()
-        tempLabel.text = "The temperture is"    
     }
     
     func smilinessForExpressionView(sender: ExpressionView) -> Double? {
