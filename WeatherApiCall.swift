@@ -33,21 +33,16 @@ public class WeatherApi {
                     let json = JSON(dict)
                     self.weatherTemp = json["main"]["temp"].doubleValue
                     print(json)
-                    
-            }
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.delegate.updateMood()
+                        
+                    })
+                }
             case .Failure(let error):
                 print(error)
             }
         }
-        
-        dispatch_async(dispatch_get_main_queue(), {
-            self.delegate.updateMood()
-            
-        })
     }
-    
-    
-    
 }
 
     

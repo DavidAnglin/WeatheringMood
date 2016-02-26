@@ -43,7 +43,7 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
 //    }
     
     func updateUI() {
-        expressionView.setNeedsDisplay()
+        expressionView?.setNeedsDisplay()
     }
     
     func smilinessForExpressionView(sender: ExpressionView) -> Double? {

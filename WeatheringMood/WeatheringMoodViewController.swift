@@ -65,42 +65,44 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
     }
     
 
-    
+   
     
     func updateMood()
     {
+      var temp = self.weatherData.weatherTemp
+    }
         
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController
         if let navCon = destination as? UINavigationController {
             destination = navCon.visibleViewController!
         }
         if let wmvc = destination as? HappySadViewController {
-            let temp = self.weatherData.weatherTemp
-            print(temp)
-            if temp <= 70 {
-                wmvc.happySad = 0
-                print("The temperture is \(self.weatherData.weatherTemp)°")
-            } else {
-                wmvc.happySad = 100
-                print("The temperture is \(self.weatherData.weatherTemp)°")
+            if let identifer = segue.identifier {
+                switch identifer {
+                case "weatherFace":
+                    let temp = self.weatherData.weatherTemp
+                    print(temp)
+                    if temp <= 40.0 {
+                    wmvc.happySad = 0
+                    print("The temperture is \(self.weatherData.weatherTemp)°")
+                } else {
+                    wmvc.happySad = 100
+                    print("The temperture is \(self.weatherData.weatherTemp)°")
+                }
+                default: break
             }
         }
     }
 }
-
-
 
     @IBAction func decisions(sender: UIButton)
     {
         if ((zipCodeSearchField as? UITextField) != nil) {
             self.weatherData.zipCode = zipCodeSearchField.text!
             self.weatherData.getDegrees()
-            }
+        }
     }
-    
-
-    
-
 }
 
