@@ -28,7 +28,6 @@
                 <splitViewController id="Jd7-Yc-fCC" sceneMemberID="viewController">
                     <connections>
                         <segue destination="23m-6p-Jk8" kind="relationship" relationship="masterViewController" id="LgX-RH-inP"/>
-                        <segue destination="i8J-6Y-eUl" kind="relationship" relationship="detailViewController" id="mkf-wu-xOn"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy1-Ep-lSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,7 +48,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fu9-o5-eYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="431"/>
+            <point key="canvasLocation" x="-184" y="419"/>
         </scene>
         <!--Weathering Mood-->
         <scene sceneID="tne-QT-ifu">
@@ -97,7 +96,6 @@
                                 </state>
                                 <connections>
                                     <action selector="decisions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LV4-Zn-VhO"/>
-                                    <segue destination="i8J-6Y-eUl" kind="showDetail" identifier="weatherFace" id="bU0-xB-SuW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -120,6 +118,7 @@
                     <navigationItem key="navigationItem" title="Weathering Mood" id="YO8-kl-oYv"/>
                     <connections>
                         <outlet property="zipCodeSearchField" destination="Y7j-Qj-abs" id="w9y-e5-CDr"/>
+                        <segue destination="i8J-6Y-eUl" kind="showDetail" identifier="weatherFace" id="GM1-R3-rBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -167,10 +166,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="681" y="431"/>
+            <point key="canvasLocation" x="547" y="419"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bU0-xB-SuW"/>
-    </inferredMetricsTieBreakers>
 </document>

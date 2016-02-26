@@ -65,11 +65,12 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
     }
     
 
-   
+    var temp: Double = 0
     
     func updateMood()
     {
-      var temp = self.weatherData.weatherTemp
+        temp = self.weatherData.weatherTemp
+        performSegueWithIdentifier("weatherFace", sender: self)
     }
         
         
@@ -84,7 +85,7 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
                 case "weatherFace":
                     let temp = self.weatherData.weatherTemp
                     print(temp)
-                    if temp <= 40.0 {
+                    if temp <= 70 {
                     wmvc.happySad = 0
                     print("The temperture is \(self.weatherData.weatherTemp)°")
                 } else {
