@@ -22,7 +22,6 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
     var happySad: Int = 100 { // 0 = very sad, 100 = ecstatic
         didSet {
             happySad = min(max(happySad, 0), 100)
-            print("happy = \(happySad)")
             updateUI()
         }
     }

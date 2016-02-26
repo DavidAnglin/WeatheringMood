@@ -84,7 +84,6 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
                 switch identifer {
                 case "weatherFace":
                     let temp = self.weatherData.weatherTemp
-                    print(temp)
                     if temp <= 70 {
                     wmvc.happySad = 0
                     print("The temperture is \(self.weatherData.weatherTemp)°")

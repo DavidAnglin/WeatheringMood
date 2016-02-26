@@ -32,7 +32,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy1-Ep-lSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1000" y="36"/>
+            <point key="canvasLocation" x="-996" y="-12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xgp-Is-yyD">
@@ -118,7 +118,7 @@
                     <navigationItem key="navigationItem" title="Weathering Mood" id="YO8-kl-oYv"/>
                     <connections>
                         <outlet property="zipCodeSearchField" destination="Y7j-Qj-abs" id="w9y-e5-CDr"/>
-                        <segue destination="i8J-6Y-eUl" kind="showDetail" identifier="weatherFace" id="GM1-R3-rBB"/>
+                        <segue destination="i8J-6Y-eUl" kind="showDetail" identifier="weatherFace" id="5dW-wk-Kxt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

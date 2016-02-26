@@ -32,7 +32,6 @@ public class WeatherApi {
                 if let dict = response.result.value as? Dictionary<String, AnyObject> {
                     let json = JSON(dict)
                     self.weatherTemp = json["main"]["temp"].doubleValue
-                    print(json)
                     dispatch_async(dispatch_get_main_queue(), {
                         self.delegate.updateMood()
                         
