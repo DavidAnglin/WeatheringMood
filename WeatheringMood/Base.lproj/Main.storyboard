@@ -139,8 +139,20 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-cc-VhH" customClass="ExpressionView" customModule="WeatheringMood" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KF-k9-YMt">
+                                        <rect key="frame" x="279" y="571" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="centerX" secondItem="EuR-cc-VhH" secondAttribute="centerX" id="ZJs-sB-se5"/>
+                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="bottom" secondItem="EuR-cc-VhH" secondAttribute="bottomMargin" id="wdU-Qh-Wme"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="oCp-6O-pYK" appends="YES" id="MvY-Fm-ECe"/>
                                 </connections>
@@ -157,6 +169,7 @@
                     <navigationItem key="navigationItem" id="EQh-AQ-h7a"/>
                     <connections>
                         <outlet property="expressionView" destination="EuR-cc-VhH" id="ytC-OV-uPT"/>
+                        <outlet property="tempLabel" destination="1KF-k9-YMt" id="RB2-Yg-2al"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flS-KB-YqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,7 +179,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="547" y="419"/>
+            <point key="canvasLocation" x="551" y="419"/>
         </scene>
     </scenes>
 </document>

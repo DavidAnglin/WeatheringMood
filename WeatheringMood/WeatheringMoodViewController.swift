@@ -18,7 +18,6 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         weatherData.delegate = self
-        updateMood()
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
@@ -65,15 +64,18 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
     }
     
 
-    var temp: Double = 0
     
     func updateMood()
     {
-        temp = self.weatherData.weatherTemp
         performSegueWithIdentifier("weatherFace", sender: self)
     }
         
-        
+    var temperture: Double = 0 {
+        didSet {
+            temperture = weatherData.weatherTemp
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController
         if let navCon = destination as? UINavigationController {
@@ -83,12 +85,13 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
             if let identifer = segue.identifier {
                 switch identifer {
                 case "weatherFace":
-                    let temp = self.weatherData.weatherTemp
-                    if temp <= 70 {
+                    if temperture <= 70 {
                     wmvc.happySad = 0
+                        self.tempLabel.text = ("The temperture is \(temperture)°")
                     print("The temperture is \(self.weatherData.weatherTemp)°")
                 } else {
                     wmvc.happySad = 100
+                        self.tempLabel.text = ("The temperture is \(temperture)°")
                     print("The temperture is \(self.weatherData.weatherTemp)°")
                 }
                 default: break
@@ -102,6 +105,7 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
         if ((zipCodeSearchField as? UITextField) != nil) {
             self.weatherData.zipCode = zipCodeSearchField.text!
             self.weatherData.getDegrees()
+            
         }
     }
 }

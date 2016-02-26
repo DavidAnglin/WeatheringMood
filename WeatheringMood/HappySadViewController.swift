@@ -25,7 +25,13 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
             updateUI()
         }
     }
+    
+    var tempLabelDegree: Double = 0
    
+    @IBOutlet weak var tempLabel: UILabel!
+  
+    
+    
 //    var minimumPressDuration: CFTimeInterval = 0.0
     
 //    @IBAction func changeMood(gesture: UILongPressGestureRecognizer)
@@ -43,6 +49,7 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
     
     func updateUI() {
         expressionView?.setNeedsDisplay()
+        tempLabel.text = "The temperture is"    
     }
     
     func smilinessForExpressionView(sender: ExpressionView) -> Double? {
