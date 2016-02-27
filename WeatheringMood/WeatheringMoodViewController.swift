@@ -84,13 +84,11 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
                 case "weatherFace":
                     let temp = self.weatherData.weatherTemp
                     if temp <= 70 {
-                    wmvc.temperture = temp
-                    wmvc.happySad = 0
-                    print("The temperture is \(self.weatherData.weatherTemp)°")
+                        wmvc.happySad = 0
+                        wmvc.temperture = temp
                 } else {
                     wmvc.happySad = 100
                     wmvc.temperture = temp
-                    print("The temperture is \(self.weatherData.weatherTemp)°")
                 }
                 default: break
             }

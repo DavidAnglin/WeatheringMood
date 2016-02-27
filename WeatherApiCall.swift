@@ -12,7 +12,6 @@ import Alamofire
 
 protocol OpenWeatherMapDelegate {
     func updateMood()
-    
 }
 
 public class WeatherApi {
