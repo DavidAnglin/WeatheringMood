@@ -101,10 +101,8 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
 
     @IBAction func decisions(sender: UIButton)
     {
-        if ((zipCodeSearchField as? UITextField) != nil) {
             self.weatherData.zipCode = zipCodeSearchField.text!
             self.weatherData.getDegrees()
         }
-    }
 }
 
