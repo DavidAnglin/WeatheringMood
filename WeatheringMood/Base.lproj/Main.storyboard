@@ -140,9 +140,12 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-cc-VhH" customClass="ExpressionView" customModule="WeatheringMood" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KF-k9-YMt">
-                                        <rect key="frame" x="279" y="571" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="1KF-k9-YMt">
+                                        <rect key="frame" x="8" y="553" width="584" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="005-Z9-aJF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -150,8 +153,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="centerX" secondItem="EuR-cc-VhH" secondAttribute="centerX" id="ZJs-sB-se5"/>
-                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="bottom" secondItem="EuR-cc-VhH" secondAttribute="bottomMargin" id="wdU-Qh-Wme"/>
+                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="leading" secondItem="EuR-cc-VhH" secondAttribute="leadingMargin" id="4s1-Bq-6JS"/>
+                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="trailing" secondItem="EuR-cc-VhH" secondAttribute="trailingMargin" id="WKO-Xi-jOS"/>
+                                    <constraint firstItem="1KF-k9-YMt" firstAttribute="bottom" secondItem="EuR-cc-VhH" secondAttribute="bottomMargin" id="Z0g-Tp-oOh"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="oCp-6O-pYK" appends="YES" id="MvY-Fm-ECe"/>
@@ -169,7 +173,7 @@
                     <navigationItem key="navigationItem" id="EQh-AQ-h7a"/>
                     <connections>
                         <outlet property="expressionView" destination="EuR-cc-VhH" id="ytC-OV-uPT"/>
-                        <outlet property="tempLabel" destination="1KF-k9-YMt" id="RB2-Yg-2al"/>
+                        <outlet property="infoLabel" destination="1KF-k9-YMt" id="oKm-qS-hhi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flS-KB-YqK" userLabel="First Responder" sceneMemberID="firstResponder"/>

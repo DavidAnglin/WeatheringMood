@@ -21,10 +21,7 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
     }
     
     var temperture: Double = 0
-  
- 
-
- 
+    var city: String = ""
     
     
     var happySad: Int = 100 { // 0 = very sad, 100 = ecstatic
@@ -32,16 +29,13 @@ class HappySadViewController: UIViewController, ExpressionViewDataSource
             happySad = min(max(happySad, 0), 100)
             updateUI()
         }
-    }
+    }   
     
-   
-   
-    @IBOutlet weak var tempLabel: UILabel! {
+    @IBOutlet weak var infoLabel: UILabel! {
         didSet {
-            tempLabel.text = "Temperture = \(temperture)"
+            infoLabel.text = "In the City of \(city) the temperture is \(temperture)°"
         }
     }
-    
     
   
     

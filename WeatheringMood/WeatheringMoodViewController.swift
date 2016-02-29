@@ -65,9 +65,11 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
     
 
     var temp: Double = 0
+    var cityName: String = ""
     
     func updateMood()
     {
+        cityName = self.weatherData.cityName
         temp = self.weatherData.weatherTemp
         performSegueWithIdentifier("weatherFace", sender: self)
     }
@@ -82,13 +84,14 @@ class WeatheringMoodViewController: HappySadViewController, UITextFieldDelegate,
             if let identifer = segue.identifier {
                 switch identifer {
                 case "weatherFace":
-                    let temp = self.weatherData.weatherTemp
                     if temp <= 70 {
                         wmvc.happySad = 0
                         wmvc.temperture = temp
+                        wmvc.city = cityName
                 } else {
                     wmvc.happySad = 100
                     wmvc.temperture = temp
+                    wmvc.city = cityName
                 }
                 default: break
             }

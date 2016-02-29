@@ -17,7 +17,7 @@ class ExpressionView: UIView {
     
     var lineWidth: CGFloat = 3 { didSet {setNeedsDisplay() } }
     var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() } }
-    var scale: CGFloat = 0.90 { didSet {setNeedsDisplay() } }
+    var scale: CGFloat = 0.75 { didSet {setNeedsDisplay() } }
     
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
